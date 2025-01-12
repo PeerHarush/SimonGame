@@ -1,0 +1,98 @@
+body {
+  text-align: center;
+  background-color: #293051;
+  margin: 0;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  color: pink;
+}
+h2{
+  color: pink;
+}
+
+.container {
+  position: relative;
+  width: 750px; 
+  height: 700px; 
+  border-radius: 50%; 
+  background-color: black;
+  border: 10px solid black;
+}
+
+.footer {
+  color: #FEF2BF;
+  font-size: 1.5rem;
+}
+
+
+.btn {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border: 10px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.black {
+  background-color: pink;
+  height: 150px;
+  width: 150px;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem; 
+  color: black; 
+  pointer-events: none; /* מונע לחיצה על האלמנט */
+  cursor: default; 
+}
+.red {
+  background-color: red;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.green {
+  background-color: rgb(10, 233, 10);
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.blue {
+  background-color: rgb(0, 98, 255);
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.yellow {
+  background-color: rgb(255, 255, 0);
+  top: 50%;
+  right: 20%;
+  transform: translate(50%, -50%);
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
